@@ -3,25 +3,26 @@ body {
   margin: 0;
 }
 
+
 .header-content {
   color: white;
   background-color: rgb(78, 72, 72);
   height: 30px;
   padding-top: 20px;
   padding-left: 10px;
+  
 }
 
-.nav-container {
+.nav-container ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
   background-color: rgb(0, 0, 0);
   height: 50px;
-
-
+  margin: 0;
 }
 
-.navigation-content {
+a {
   color: white;
 }
 
@@ -35,7 +36,7 @@ body {
 }
 
 .aside-content {
-  background-color: white;
+  background-color: rgb(63, 59, 59);
 }
 
 .main-content,
