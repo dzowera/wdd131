@@ -29,7 +29,7 @@ nav {
 }
 
 /* I want to make the nav in a column set-up */
-@media (max-width: 500px){
+@media (max-width: 500px) {
   nav {
     flex-direction: column;
     height: 80px;
@@ -55,11 +55,11 @@ main {
   margin: 10px;
 }
 
-@media(max-width: 600px){
+@media(max-width: 600px) {
   main {
-      display: grid;
-      grid-template-columns: 1fr;
-    }
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
 
 .card .head {
@@ -73,6 +73,12 @@ main {
   border: solid 1px black;
   border-radius: 2px;
   background-color: rgb(230 240 255);
+}
+
+@media(max-width: 600px) {
+  .card {
+    margin-bottom: 10px;
+  }
 }
 
 .card ul {
