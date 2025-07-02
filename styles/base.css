@@ -28,6 +28,14 @@ nav {
   height: 50px;
 }
 
+/* I want to make the nav in a column set-up */
+@media (max-width: 500px){
+  nav {
+    flex-direction: column;
+    height: 80px;
+  }
+}
+
 nav a {
   text-decoration: none;
   color: white;
@@ -45,6 +53,13 @@ main {
   margin-top: 10px;
   column-gap: 5px;
   margin: 10px;
+}
+
+@media(max-width: 600px){
+  main {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
 }
 
 .card .head {
