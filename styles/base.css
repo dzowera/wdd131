@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  background-color: rgb(242 242 242);
+}
+
+#course-title {
+  background-color: rgb(1 50 32);
+  color: white;
+  display: block;
+  text-align: center;
+  padding-top: 20px;
+  /* margin-bottom: 5px; */
+  height: 40px;
+}
+
+.my-name {
+  font-size: 12px;
+  color: yellow;
+}
+
+nav {
+  display: flex;
+  background-color: black;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  transition: padding 0.15s;
+}
+
+nav a:hover {
+  border: solid 1px white;
+  padding: 5px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  margin-top: 10px;
+  column-gap: 5px;
+  margin: 10px;
+}
+
+.card .head {
+  background-color: rgb(1 50 32);
+  color: white;
+  display: block;
+  text-align: center;
+}
+
+.card {
+  border: solid 1px black;
+  border-radius: 2px;
+  background-color: rgb(230 240 255);
+}
+
+.card ul {
+  margin-top: 50px;
+}
+
+.card ul li {
+  margin-top: 10px;
+}
+
+.upper {
+  display: flex;
+}
+
+.upper p {
+  flex: 2;
+  margin-left: 8px;
+}
+
+.upper img {
+  flex: 1;
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-top: 10px;
+}
+
+.location {
+  display: block;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.bottom {
+  display: flex;
+}
+
+.bottom img {
+  flex: 1;
+}
+
+.bottom p {
+  flex: 2;
+  margin-top: 20px;
+}
+
+.bottom figure img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+figcaption {
+  color: rgb(97, 95, 95);
+  font-size: 9px;
+  font-style: italic;
+}
+
+footer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  background-color: #013220;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+footer p {
+  line-height: 5px;
+}

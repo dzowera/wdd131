@@ -4,11 +4,93 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="WDD 131 - Dynamic Web Fundamentals">
+  <meta name="author" content="Innocent Dzowera">
   <title>WDD131</title>
+
+  <!-- link the JS file -->
+  <script src="scripts/getdates.js" defer></script>
+
+  <!-- link the CSS file -->
+
+  <link rel="stylesheet" href="styles/base.css">
+
+  <!-- link the fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
 </head>
 
 <body>
-  <h1>This is WDD131</h1>
+  <header>
+    <span id="course-title">WDD 131&colon; Dynamic Web Fundamentals &ndash; <span class="my-name">Innocent
+        Dzowera</span> </span>
+    <nav>
+      <a href="https://www.linkedin.com/in/innocent-dzowera-a31477274/" target="_blank">LinkedIn</a>
+      <a href=" https://byupw.instructure.com/." target="_blank">Canvas</a>
+      <a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank">Scripture</a>
+      <a href="placeholder" target="_blank">Final Project</a>
+    </nav>
+
+  </header>
+
+  <main>
+    <!-- left section -->
+
+    <section class="card">
+      <h class="head">About Me</h>
+      <div class="upper">
+        <p>
+          My name is Innocent Dzowera. I am 25 years old and live with my mother and my two sisters.
+          I am new to coding and still learning most programming languages.
+          In my free time, I enjoy practicing code to improve my skills.
+        </p>
+
+        <img alt="My Profile Picture" class="profile-picture" src="images/my-profile.jpg">
+
+      </div>
+
+      <h class="location">Lilongwe, Malawi</h>
+
+      <div class="bottom">
+        <figure>
+          <img src="images/malawi-flag.png" alt="The Official Flag of Malawi">
+          <figcaption>Official Flag of Malawi</figcaption>
+        </figure>
+
+
+        <p>
+          Malawi is a landlocked country in southeastern Africa.
+          It is home to the spectacular Lake Malawi, famous for its
+          freshwater fish like chambo. English is the official language,
+          but most people speak Chichewa in daily life. Malawians
+          are known for their warmth and hospitality.
+        </p>
+      </div>
+
+    </section>
+
+    <!-- right section -->
+    <section class="card">
+      <h class="head">Web Development Resources</h>
+      <ul>
+        <li><a href="placeholder">Dev.to Community</a></li>
+        <li><a href="placeholder">Smashing Magazine</a></li>
+        <li><a href="placeholder">CSS Tricks</a></li>
+        <li><a href="placeholder">W3 Schools</a></li>
+        <li><a href="placeholder">Udemy</a></li>
+        <li><a href="placeholder">Image Placeholder</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy;<span id="currentyear"></span> Innocent Dzowera&colon; Malawi</p>
+    <p>Last Day Modified: <span id="lastModified"></span></p>
+  </footer>
+
 </body>
 
 </html>
