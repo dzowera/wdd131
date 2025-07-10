@@ -1,0 +1,26 @@
+/* do not include media query here */
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+/* use of comma combines the css declaration */
+
+header, main, footer {
+  max-width: 600px;
+  margin: 1rem auto;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  background-color: rgb(69,179,224);
+}
+
+main{
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 5px;
+}
+
+section{
+  padding: 1rem;
+  background-color: white;
+}
