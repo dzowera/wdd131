@@ -1,0 +1,128 @@
+/* temples.css */
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+nav {
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+}
+
+.brand-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.toggle-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Fix: Always position X in the overlay, and only show it when menu is active */
+.close-button {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+/* Show X when nav menu is active */
+.navbar-links.active+.close-button,
+.navbar-links.active~.close-button {
+  display: block;
+}
+
+/* Default (hidden) mobile menu */
+.navbar-links {
+  display: none;
+  width: 100%;
+}
+
+/* Show full overlay when active */
+.navbar-links.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #333;
+  width: 100%;
+  height: auto;
+  z-index: 100;
+
+ 
+}
+
+.navbar-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-links ul li {
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid #555;
+  font-size: 1.5rem;
+}
+
+.navbar-links ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+.navbar-links.active~.brand-title,
+.navbar-links.active~.toggle-button {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.navbar-links.active~.close-button {
+  display: block;
+}
+main h1{
+  text-align: center;
+}
+main div {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+main div figure img{
+  width: 100%;
+}
+
+main div figure figcaption{
+  font-style: italic;
+  font-size: 10px;
+  color: #555;
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: aliceblue;
+}
