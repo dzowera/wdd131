@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Place Webpage">
+  <meta name="author" content="Innocent Dzowera">
+  <title>Place Webpage</title>
+
+  <!-- link css and js -->
+   <link rel="stylesheet" href="styles/place.css">
+
+   <!-- <script src="scripts/place.js" defer></script> -->
+
+  <!-- link fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+
+</head>
+<body>
+  <div class="country">Malawi</div>
+  <div class="hero">
+    <picture>
+      <source srcset="images/hero-wider-view.webp" media="(min-width: 550px)" >
+      <img src="images/hero-mobile-view.webp" alt="hey">
+    </picture>
+
+    <div class="data2">
+      <h2>Stats</h2>
+      <ul>
+        <li><strong>Area:</strong>118,480 sq km</li>
+        <li><strong>Population:</strong>22,216,120</li>
+        <li><strong>Capital:</strong>Lilongwe</li>
+        <li><strong>Languages:</strong>Chichewa, English</li>
+        <li><strong>Currency:</strong>Malawi Kwacha</li>
+        <li><strong>Time Zone:</strong>UTC+2:00</li>
+        <li><strong>Calling Code:</strong>+265</li>
+        <li><strong>Internet TLD:</strong>.mw</li>
+      </ul>
+    </div>
+
+    <div class="weather2">
+      <h2>Weather</h2>
+      <img src="images/weather-icon.webp">
+      <ul>
+        <li><strong>Temperature:</strong> 10 &deg;C</li>
+        <li><strong>Conditions:</strong> Partly Cloudy
+        <li>
+        <li><strong>Wind:</strong> 5 km/hr</li>
+        <li><strong>Wind Chill:</strong> 9.8 &deg;C</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="green"></div>
+
+  <div class="container">
+    <p>Data</p>
+    <div class="data">
+      <ul>
+        <li><strong>Area:</strong>118,480 sq km</li>
+        <li><strong>Population:</strong>22,216,120</li>
+        <li><strong>Capital:</strong>Lilongwe</li>
+        <li><strong>Languages:</strong>Chichewa, English</li>
+        <li><strong>Currency:</strong>Malawi Kwacha</li>
+        <li><strong>Time Zone:</strong>UTC+2:00</li>
+        <li><strong>Calling Code:</strong>+265</li>
+        <li><strong>Internet TLD:</strong>.mw</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="weather">
+    <p>Weather</p>
+    <img src="images/weather-icon.webp">
+    <ul>
+      <li><strong>Temperature:</strong> 10 &deg;C</li>
+      <li><strong>Conditions:</strong> Partly Cloudy<li>
+      <li><strong>Wind:</strong> 5 km/hr</li>
+      <li><strong>Wind Chill:</strong> 9.8 &deg;C</li>
+    </ul>
+  </div>
+
+  <footer>
+    <p>&copy;Innocent Dzowera <span id="date"></span></p>
+    <p>Last Day Modified: <span id="last-day-mod"></span></p>
+  </footer>
+
+  <script>
+    document.querySelector('#date').textContent = new Date().getFullYear();
+    document.querySelector('#last-day-mod').textContent = new Date().toDateString()
+
+    function calculateWindChill(temp, windSpeed, unit) {
+        return (unit === "metric" && temp <= 10 && windSpeed > 4.8)
+          ? (13.12 + 0.6215 * temp - 11.37 * Math.pow(windSpeed, 0.16) + 0.3965 * temp * Math.pow(windSpeed, 0.16)).toFixed(2)
+          : (unit === "imperial" && temp <= 50 && windSpeed > 3)
+            ? (35.74 + 0.6215 * temp - 35.75 * Math.pow(windSpeed, 0.16) + 0.4275 * temp * Math.pow(windSpeed, 0.16)).toFixed(2)
+            : "N/A";
+      }
+
+    
+  </script>
+  
+</body>
+</html>
