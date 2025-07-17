@@ -1,4 +1,9 @@
+:root{
+  --bg-color: rgb(243 243 243)
+}
+
 body{
+  background-color: var(--bg-color);
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
@@ -14,6 +19,10 @@ body{
   height: 25px;
   padding-top: 8px;
   font-weight: bold;
+}
+
+.country::after{
+  content: '💭';
 }
 img{
   width: 100%;
