@@ -1,0 +1,44 @@
+/* temples-large.css */
+
+@media (min-width: 600px) {
+
+  .toggle-button,
+  .close-button {
+    display: none;
+  }
+
+  .navbar-links {
+    display: flex !important;
+    justify-content: flex-end;
+    width: auto;
+    position: static;
+    height: auto;
+  }
+
+  .navbar-links ul {
+    display: flex;
+    gap: 20px;
+  }
+
+  .navbar-links ul li {
+    border: none;
+    padding: 0;
+  }
+
+  .navbar-links ul li a {
+    padding: 10px;
+    transition: background-color 0.3s;
+  }
+
+  .navbar-links ul li a:hover {
+    background-color: #555;
+  }
+
+  .brand-title {
+    opacity: 1 !important;
+  }
+
+  /* the album */
+
+   
+}

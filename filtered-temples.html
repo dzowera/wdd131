@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="responsive menus">
+  <meta name="author" content="Innocent Dzowera">
+  <title>RESPONSIVE MENU</title>
+
+  <!-- link the the CSS and JS files -->
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/filtered-temples.css">
+  <link rel="stylesheet" href="styles/filtered-temples-large.css">
+  <!-- JS -->
+  <script src="scripts/filtered-temples.js" defer></script>
+
+  <!-- link fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="brand-title">Temple Album</div>
+      <button class="toggle-button" id="menu-toggle">☰</button>
+
+      <div class="navbar-links" id="nav-links">
+        <ul>
+          <li><a href="#" onclick="renderHTML()">Home</a></li>
+          <li><a href="#" onclick="oldTemple()">Old</a></li>
+          <li><a href="#" onclick="newTemple()">New</a></li>
+          <li><a href="#" onclick="largeTemple()">Large</a></li>
+          <li><a href="#" onclick="smallTemple()">Small</a></li>
+        </ul>
+      </div>
+
+      <button class="close-button" id="close-menu">✖</button>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Temple</h1>
+    <h2>An Album of LSD Temples</h2>
+
+    <div class="album js-album">
+
+    </div>
+  </main>
+
+
+  <footer>
+    <p>&copy;<span id="currentyear"></span> Innocent Dzowera&colon; Malawi</p>
+    <p>Last Day Modified: <span id="lastModified"></span></p>
+  </footer>
+
+
+</body>
+
+</html>
