@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="Innocent Dzowera"/>
+  <meta name="description" content="Practicing Forms"/>
+  <title>Product Review Form</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet"/>
+  <!-- link css -->
+  <link rel="stylesheet" href="styles/forms.css">
+  <!-- link js file -->
+  <script src="scripts/forms.js" defer></script>
+
+</head>
+
+<body>
+  <header>Product Review</header>
+
+  <main>
+    <form method="get" action="review.html">
+      <!-- Product Name -->
+      <div>
+        <label for="product">Product Name</label><br>
+        <select id="product" name="product" required>
+          <option value="" disabled selected hidden>Select a Product...</option>
+          <!-- Options populated by JS -->
+        </select>
+      </div>
+
+      <!-- Overall Rating -->
+      <fieldset>
+        <legend>Overall Rating</legend>
+        <div class="overall-rating">
+          <label class="radio-option" for="rate1">
+            <span>&star;</span>
+            <input type="radio" id="rate1" name="rating" value="1" required>
+          </label>
+          <label class="radio-option" for="rate2">
+            <span>&star;&star;</span>
+            <input type="radio" id="rate2" name="rating" value="2">
+          </label>
+          <label class="radio-option" for="rate3">
+            <span>&star;&star;&star;</span>
+            <input type="radio" id="rate3" name="rating" value="3">
+          </label>
+          <label class="radio-option" for="rate4">
+            <span>&star;&star;&star;&star;</span>
+            <input type="radio" id="rate4" name="rating" value="4">
+          </label>
+          <label class="radio-option" for="rate5">
+            <span>&star;&star;&star;&star;&star;</span>
+            <input type="radio" id="rate5" name="rating" value="5">
+          </label>
+        </div>
+      </fieldset>
+
+      <!-- Date of Installation -->
+      <div>
+        <label for="install-date">Date of Installation</label><br>
+        <input type="date" id="install-date" name="install-date" required>
+      </div>
+
+      <!-- Useful Features -->
+      <fieldset>
+        <legend>Which features did you find useful in the product? <span class="optional">(Check all that apply)</span></legend>
+        <label><input type="checkbox" id="durability" name="features[]" value="durability"> Durability</label><br>
+        <label><input type="checkbox" id="ease" name="features[]" value="ease of use"> Ease of Use</label><br>
+        <label><input type="checkbox" id="performance" name="features[]" value="performance"> Performance</label><br>
+        <label><input type="checkbox" id="design" name="features[]" value="design"> Design</label>
+      </fieldset>
+
+      <!-- Written Review -->
+      <div>
+        <label for="written-review">Written Review <span class="optional">(Optional)</span></label><br>
+        <textarea id="written-review" name="written-review" class="written-review"></textarea>
+      </div>
+
+      <!-- User Name -->
+      <div>
+        <label for="username">Your Name <span class="optional">(Optional)</span></label><br>
+        <input type="text" id="username" name="username" class="name">
+      </div>
+
+      <!-- Submit Button -->
+      <div class="submit">
+        <input type="submit" value="Submit Review">
+      </div>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Innocent Dzowera: Malawi</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+
+  
+</body>
+</html>
