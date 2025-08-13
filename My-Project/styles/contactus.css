@@ -1,0 +1,72 @@
+ body{
+      margin: 0;
+      background-color: rgb(201, 193, 193);
+    }
+
+form{
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: rgb(136, 35, 136);
+  color: white;
+}
+
+form h2{
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+label{
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+select, 
+input[type="text"], 
+input[type="email"], 
+textarea{
+  
+  width: 99%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+
+}
+
+textarea{
+  resize: vertical;
+}
+
+fieldset{
+  margin-top: 20px;
+  
+  
+}
+legend{
+  font-weight: bold;
+}
+
+input[type="radio"],
+input[type="chackbox"]{
+  margin-right: 6px;
+}
+form button{
+  width: 140px;
+  margin-top: 15px;
+  align-self: center;
+  cursor: pointer;
+  background-color: rgb(56, 6, 104);
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  color: white;
+}
+  
+.thank-you{
+  color: green;
+  display: none;
+}

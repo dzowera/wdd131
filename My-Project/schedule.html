@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="vistors can plan the dates of travel">
+  <title>Schedule</title>
+
+  <link rel="stylesheet" href="styles/schedule.css">
+  <script src="scripts/schedule.js" defer></script>
+  
+</head>
+<body>
+
+  <main>
+    <div>
+     <h2>Welcome! You Can Easily Plan Your Schedule Here.</h2>
+    </div>
+    <div class="set-plan">
+    <input placeholder="Enter your destination" id="textInput" class="destination-name">
+    <input type="date" id="dateInput" class="dateInput">
+    <button onclick="addDestination()" class="add-button">Add</button>
+  </div>
+  
+  <div class="planned-schedule"></div>
+  </main>
+</body>
+</html>

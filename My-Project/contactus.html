@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Review Form">
+  <meta name="author" content="Innocent Dzowera">
+  <title>Contact Us</title>
+
+  <link rel="stylesheet" href="styles/contactus.css">
+  <script src="scripts/form.js" defer></script>
+</head>
+<body>
+  <form id="feedbackForm">
+    <h2>What Tourist Destination Did You Like Most in Malawi?</h2>
+    <!-- for the lake -->
+    <label for="lake">Favourite Lake Destination: </label>
+    <select id="lake" name="lake">
+      <option value="">--Select--</option>
+      <option value="Lake Malawi">Lake Malawi National Park</option>
+      <option value="Cape Maclear">Cape Maclear</option>
+      <option value="Likoma Island">Likoma Island</option>
+    </select>
+
+    <!-- mountains -->
+    <label for="mountain">What was your favourite mountain:</label>
+    <select name="mountain" id="mountain">
+      <option value="">--Select--</option>
+      <option value="Mulanje Mountain">Mulanje Mountain</option>
+      <option value="Zomba Mountain">Zomba Mountain</option>
+    </select>
+
+    <!-- national parks -->
+    <label for="parks">What was your favourite national park:</label>
+    <select name="parks" id="parks">
+      <option value="">--Select--</option>
+      <option value="Kasungu National Park">Kasungu National Park</option>
+      <option value="Liwonde National Park">Liwonde National Park</option>
+      <option value="Majete Wildlife Reserve">Majete Wildlife Reserve</option>
+    </select>
+
+    <!-- comments -->
+    <label for="comments">Why do you love these places:</label>
+    <textarea name="comments" id="comments" placeholder="Enter your text here"></textarea>
+
+    <!-- overall rating -->
+    <fieldset>
+      <legend>How do you rate our overall service:</legend>
+      <label><input type="radio" name="rating" value="1">⭐</label>
+      <label><input type="radio" name="rating" value="2">⭐⭐</label>
+      <label><input type="radio" name="rating" value="3">⭐⭐⭐</label>
+      <label><input type="radio" name="rating" value="4">⭐⭐⭐⭐</label>
+      <label><input type="radio" name="rating" value="5">⭐⭐⭐⭐⭐</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>What do you like most about Malawi:</legend>
+      <label><input type="checkbox" name="like" value="friendliness"> Friendliness</label>
+      <label><input type="checkbox" name="like" value="weather"> Weather</label>
+      <label><input type="checkbox" name="like" value="transport"> Transportation</label>
+      <label><input type="checkbox" name="like" value="prices"> Prices</label>
+    </fieldset>
+
+    <!-- extra comments -->
+    <label for="extra">Please write any additional comments:</label>
+    <textarea name="extra" id="extra" placeholder="We would like to hear more from you" rows="4"></textarea>
+
+    <!-- name -->
+    <label for="name">Your Name:</label>
+    <input type="text" name="name" id="name" required>
+
+    <!-- email -->
+    <label for="email">Your Email:</label>
+    <input type="email" name="email" id="email" required>
+
+    <button type="submit">Submit Feedback</button>
+  </form>
+
+  <!-- Counter and Thank You Message -->
+  <p id="counter">Submissions: 0</p>
+  <p id="thank-you" class="thank-you">Thank you for your feedback!</p>
+</body>
+</html>
